@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* Landing page */
+#landing {
+    
+    display: flex;
+    height: 100%;
+}
+.landing-1 {
+    display: grid;
+    place-items: center;
+    background-image: url("../media/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.landing-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.landing-2 div:not(#landing-or) {
+    margin: 2rem;
+}
+.landing-2 Button {
+    width: 19rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin: 0.5rem 0 0.5rem 0rem;
+}
+#twitter-icon {
+    fill: white;
+    height: 40%;
+}
+#twitter-icon2 {
+    fill: rgb(201, 201, 201);
+    height: 45px;
+    margin-bottom: 5rem;
+}
+#landing-title-1 {
+    color: rgb(228, 228, 228);
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+#landing-title-2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#landing-title-3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+#text-pp {
+    color: gray;
+    font-size: 11px;
+    width: 65%;
+    line-height: 12px;
+}
+#landing-sign-in {
+    border: 1px solid gray;
+    background: none;
+    color: rgb(68, 145, 245);
+    font-weight: 600;
+}
+#landing-sign-in:hover {
+    background-color: rgba(0, 195, 255, 0.1);
+}
+#landing-signup {
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+#landing-signup2 {
+    margin-top: 0;
+}
+#icon {
+    margin-right: 5px;
+}
+#landing-or {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    width: 19rem;
+    margin-bottom: 0.5rem;
+}
+#landing-or::before, #landing-or::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    color: rgb(107, 107, 107);
+}
+#landing-or::before {
+    margin-right: 10px;
+}
+#landing-or::after {
+    margin-left: 10px;
+}
+  
+/* Footer */
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 0;
+    padding: 0.9em;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+}
+.footer a, .footer p {
+    color: gray;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0 8px 0px 8px;
+
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+/* login page */
+.login {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.login-card {
+    display: block;
+}
+.modal-content {
+    background-color: black;
+}
+#login-header {
+    display: flex;
+}
